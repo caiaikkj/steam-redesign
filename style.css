@@ -1,0 +1,404 @@
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+-webkit-appearance:none;
+}
+
+:root{
+
+    /* TEXT COLORS */
+
+    --whitetext: #F4F3F4;
+    --greytext: #77808D;
+
+    /* BACKGROUND COLORS */
+
+    --darkgrey: #0F141D;
+    --midgrey: #20232A;
+    --lightgrey: #303744;
+    --bgblue: #15334B;
+    --bgdarkblue: #232B45;
+
+    /* STEAM BLUE */
+
+    --steamlightblue: #67C0F6;
+    --steamdarkblue: #4B609C;
+
+    /* ACCENTS */
+
+    --success: #84A738;
+    --fail: #A74338;
+    --warning: #A1944F;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--midgrey);
+    color: var(--greytext);
+    font-family: "Motiva Sans";
+}
+
+div {
+    display: block;
+}
+
+/* HEADING */
+
+.nav-head {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 14px;
+    background: var(--darkgrey);
+}
+
+.left-nav-head {
+    display: flex;
+    margin: auto;
+}
+
+.nav-head ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.nav-head ul li a {
+    text-decoration: none;
+    color: var(--whitetext);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav-head ul li a:hover{
+    color: var(--steamlightblue);
+}
+
+.right-nav-head {
+    display: flex;
+    align-items: center;
+    margin-left: 240px;
+    margin: auto;
+}
+
+.right-nav-head li a { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px !important;
+    color: var(--greytext) !important;
+    background: var(--lightgrey);
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.right-nav-head .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--whitetext);
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.right-nav-head .profile span {
+    background: var(--lightgrey);
+    padding: 8px 6px;
+    border-radius: 0 4px 4px 0;
+}
+
+.right-nav-head .profile img {
+    width: 30px;
+    border-radius: 4px 0 0 4px;
+}
+
+/* NAVBAR */
+
+.nav-bar-top {
+    display: flex;
+    background: var(--bgdarkblue);
+    align-items: center;
+}
+
+.top-nav-items {
+    margin: auto;
+    margin-left: 56px;
+}
+
+.nav-bar-top ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    gap: 48px;
+}
+
+.nav-bar-top ul li {
+    list-style: none;
+    font-size: 14px;
+}
+
+.nav-bar-top ul li a:hover {
+    color: var(--whitetext);
+}
+
+.nav-bar-top ul li a {
+    text-decoration: none;
+    color: var(--greytext);
+}
+
+.search-button {
+    display: flex;
+    flex-grow: 1;
+}
+
+.nav-bar-top .search-button input {
+    display: block;
+    margin: auto;
+    margin-left: 250px !important;
+    background: var(--darkgrey);
+    color: var(--whitetext);
+    flex-grow: 1;
+    padding: 16px;
+    border-radius: 8px 0 0 8px;
+    border: none;
+    outline: none;
+}
+
+.nav-bar-top .search-button button {
+    display: block;
+    margin: auto;
+    margin-right: 250px;
+    background: var(--darkgrey);
+    color: var(--greytext);
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 0 8px 8px 0;
+}
+
+.nav-bar-top .search-button button:hover {
+    cursor: pointer;
+}
+
+.right-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-right: 56px;
+}
+
+.right-navbar ul li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--lightgrey);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.top-nav-content {
+    margin: 64px;
+    background-color: var(--darkgrey);
+}
+
+.top-nav-content ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px;
+}
+
+.top-nav-content ul li a {
+    text-decoration: none;
+    color: var(--greytext);
+}
+
+.top-nav-content ul li a:hover{
+    color: var(--whitetext);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content {
+    display: flex;
+    background: var(--darkgrey);
+    margin: auto;
+    box-sizing: border-box;
+    width: 220px;
+    padding: 16px;
+    box-shadow: 5px 5px 30px 1px var(--darkgrey);
+    position: relative;
+    top: -180px;
+}
+
+.main-content input {
+    display: block;
+    background: var(--bgdarkblue);
+    color: var(--whitetext);
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.main-content .filter-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+    margin: auto;
+    font-size: 24px;
+}
+
+.main-content .navbar-left-main .dropdown-filter ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.main-content .navbar-left-main .dropdown-filter ul a {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--whitetext);
+}
+
+.main-content .navbar-left-main .dropdown-filter ul li {
+    color: var(--whitetext);
+    border-top: solid 1px #232B45;
+    padding-top: 16px;
+}
+
+.games-display-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    margin: auto;
+}
+
+.game-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background: var(--darkgrey);
+    width: 1000px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.info-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.game-card img {
+    margin-left: -700px;
+}
+
+.game-card .game-card-info {
+    display: flex;
+    padding-left: 24px;
+}
+
+.game-card .game-card-info h1 {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.game-card .game-card-info ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.game-card .game-card-info ul li {
+    background-color: var(--lightgrey);
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.game-card .game-card-info ul li:hover {
+    cursor: pointer;
+}
+
+.game-card .game-card-info .date-info {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.game-card .game-card-info .date-info i {
+    font-size: 24px;
+}
+
+.game-card-info-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+}
+
+.game-card-info-right button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 18px;
+    right: 15px;
+    padding: 8px;
+    background: var(--steamlightblue);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    color: var(--bgdarkblue);
+}
+
+.game-card-info-right button:hover {
+    cursor: pointer;
+    color: var(--steamdarkblue);
+    transition: ease 300ms;
+}
+
+.game-card-info-right .price-info a {
+    text-decoration: none;
+    color: var(--whitetext);
+    background-color: var(--success);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.game-card-info-right .price-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 14px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
